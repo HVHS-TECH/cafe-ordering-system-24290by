@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Page Title</title>
+  <title>T10-input from HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- stylesheets *******************************************-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
 </head>
+
+<!--*************************************************************
+  BODY
+**************************************************************-->
+
 <body>
+<h1>Input from HTML</h1>
+<p>Open the consolew <code> (Ctrl-shift-i) </code></p> to see the message.</body>p> 
 
-<h1>Welcome to my shop</h1>
 
+ 
 
-  
-<script src="script.js"></script>
+  <p><br><br><i>Now we will get the input from the HTML form.</i><br><br><br><br></p>
+  <form onsubmit="return false;">
+    <label for="formName">User:</label>
+    <input type="text" id="nameField" name="formName">
+    <input type="submit" onclick=getFormInput()>
+  </form>
+<div id="javaScriptOutput"></div>
+
+<script src="../t10_input_from_HTML.js"></script>
+
 </body>
-</html>
 
+</html>
+<!--*************************************************************
+  END OF T10_INPUT_FROM_HTML.HTML
+**************************************************************-->
 
