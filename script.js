@@ -39,7 +39,7 @@ function getFormInput(){
 
 console.log("Hello world");
   OUTPUT.innerHTML = "<p>Reciept Name: "+username+"</p>";
-  OUTPUT.innerHTML += "<p>You are "+age+" years old</p>";
+
 
 welcome();
 }
