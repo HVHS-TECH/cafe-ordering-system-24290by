@@ -19,7 +19,7 @@ let OUTPUT = document.getElementById("javaScriptOutput");
 function welcome(){
   OUTPUT.innerHTML += "<p>Reciept Name "+username+"</p>";
 }
-
+-
 
 function displayProduct(_name,_price){
   OUTPUT.innerHTML += "<p>The product "+_name+" costs "+_price+" pounds</p>";
