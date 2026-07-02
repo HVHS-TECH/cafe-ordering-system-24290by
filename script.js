@@ -14,8 +14,8 @@ function getFormInput() {
     `;
 
     if (money >= 4) {
-        OUTPUT.innerHTML += "<p>You can afford the fries!</p>";
+        OUTPUT.innerHTML += "<p>Successfuly purchased burger</p>";
     } else {
-        OUTPUT.innerHTML += "<p>You can't afford the fries.</p>";
+        OUTPUT.innerHTML += "<p>Insufficent funds.</p>";
     }
 }  
