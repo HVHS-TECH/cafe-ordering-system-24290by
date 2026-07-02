@@ -1,49 +1,21 @@
-/******************************
- Name of task: Maths
- ******************************/
+let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+function getFormInput() {
 
-//Variables 
-let username ;
-let year = 2026;
-let age = 28;
-let money = 20;
-let birthYear;
-let oldAge;
-oldAge = age + 10;
-birthYear = year - age;
-let halfMoney = money / 2;
+    let customerName = document.getElementById("customerName").value;
+    let order = document.getElementById("nameField").value;
+    let money = Number(document.getElementById("pocketmoneyField").value);
 
-let OUTPUT = document.getElementById("javaScriptOutput");
+    OUTPUT.innerHTML = `
+        <h2>Order Summary</h2>
+        <p><b>Name:</b> ${customerName}</p>
+        <p><b>Order:</b> ${order}</p>
+        <p><b>Money:</b> ${money}</p>
+    `;
 
-function welcome(){
-  OUTPUT.innerHTML += "<p>Reciept Name "+username+"</p>";
-}
--sdf
-
-function displayProduct(_name,_price){
-  OUTPUT.innerHTML += "<p>The product "+_name+" costs "+_price+" pounds</p>";
-}
-function getFormInput(){
-  const NAME_FIELD = document.getElementById("nameField");
-  username = NAME_FIELD.value;
-
-
-
-
-
-/******************************
- Main code
- ******************************/
-
-
-console.log("Hello world");
-  OUTPUT.innerHTML = "<p>Reciept Name: "+username+"</p>";
-
-
-welcome();
-}
-
-
-
-
+    if (money >= 4) {
+        OUTPUT.innerHTML += "<p>You can afford the fries!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>You can't afford the fries.</p>";
+    }
+}  

@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<form onsubmit="getFormInput(); return false;">
 
-<head>
-  <title>Welcome to my website</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <label>Name:</label>
+    <input type="text" id="customerName">
 
-  <!-- stylesheets *******************************************-->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
-</head>
+    <br><br>
 
-<!--*************************************************************
-  BODY
-**************************************************************-->
+    <label>Order:</label>
+    <input type="text" id="nameField">
 
-<body>
-<h1>Welcome to ben cafe</h1>
+    <br><br>
 
+    <label>Amount of money:</label>
+    <input type="number" id="pocketmoneyField">
 
+    <br><br>
 
+    <button type="submit">Place Order</button>
 
-  <form onsubmit="getFormInput(); return false;">
-    <label for="formName">Name:</label>
-    <input type="text" id="nameField" name="formName">
-    <input type="submit" value="Submit">
-  </form>
-<div id="javaScriptOutput"></div>
+</form>
+
+<div id="spaceForJavaScriptOutput"></div>
 
 <script src="script.js"></script>
-
-</body>
-
-</html>
-<!--*************************************************************
-  END OF T10_INPUT_FROM_HTML.HTML
-**************************************************************-->
-
