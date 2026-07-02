@@ -7,7 +7,7 @@ function getFormInput() {
     let money = Number(document.getElementById("pocketmoneyField").value);
 
     OUTPUT.innerHTML = `
-        <h2>Order Summary</h2>
+        <h2>Reciept</h2>
         <p><b>Name:</b> ${customerName}</p>
         <p><b>Order:</b> ${order}</p>
         <p><b>Money:</b> ${money}</p>
