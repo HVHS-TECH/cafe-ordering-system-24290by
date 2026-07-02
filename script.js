@@ -13,7 +13,7 @@ function getFormInput() {
         <p><b>Money:</b> ${money}</p>
     `;
 
-    if (money >= 4) {
+    if (money >= 25) {
         OUTPUT.innerHTML += "<p>Successfuly purchased burger</p>";
     } else {
         OUTPUT.innerHTML += "<p>Insufficent funds.</p>";
