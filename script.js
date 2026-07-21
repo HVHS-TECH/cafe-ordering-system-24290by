@@ -1,6 +1,6 @@
 let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-function getFormInput() {
+function getFormInput() {   
 
     let customerName = document.getElementById("customerName").value;
     let order = document.getElementById("nameField").value;
