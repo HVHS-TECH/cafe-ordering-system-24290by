@@ -11,7 +11,7 @@ function getFormInput() {
         <p><b>Name:</b> ${customerName}</p>
         <p><b>Order:</b> ${order}</p>
         <p><b>Money:</b> $${money}</p>
-    ;
+    `;
 
     if (money >= 25) {
         let change = money - 25;
