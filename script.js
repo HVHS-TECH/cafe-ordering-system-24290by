@@ -10,12 +10,17 @@ function getFormInput() {
         <h2>Reciept</h2>
         <p><b>Name:</b> ${customerName}</p>
         <p><b>Order:</b> ${order}</p>
-        <p><b>Money:</b> ${money}</p>
-    `;
+        <p><b>Money:</b> $${money}</p>
+    ;
 
     if (money >= 25) {
-        OUTPUT.innerHTML += "<p>Successfuly purchased burger</p>";
+        let change = money - 25;
+
+        OUTPUT.innerHTML += `
+            <p>Successfuly purchased burger</p>
+            <p><b>Change:</b> $${change}</p>
+        `;
     } else {
         OUTPUT.innerHTML += "<p>Insufficent funds.</p>";
     }
-}  
+}
