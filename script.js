@@ -16,7 +16,7 @@ function getFormInput() {
     // Check if the order is valid
     if (order !== "2p") {
         OUTPUT.innerHTML += `
-            <p style="color:red;"><b>Invalid item.</b></p>
+            <p><b>Invalid item.</b></p>
             <p>Order not created.</p>
         `;
         return; // Stop the function here
@@ -27,14 +27,14 @@ function getFormInput() {
         let change = money - 25;
 
         OUTPUT.innerHTML += `
-            <p style="color:green;">Successfully purchased burger!</p>
+            <p>Successfully purchased burger!</p>
             <p><b>Change:</b> $${change}</p>
         `;
     } else {
         let needed = 25 - money;
 
         OUTPUT.innerHTML += `
-            <p style="color:red;">Insufficient funds.</p>
+            <p>Insufficient funds.</p>
             <p>You need $${needed} more to buy the burger.</p>
         `;
     }
