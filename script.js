@@ -51,6 +51,23 @@ OUTPUT.innerHTML += `
 }
 }
 
+else if (order === "6p" || order === "fries") {
+if (money >= 8) {
+let change = money - 8;
+
+OUTPUT.innerHTML += `
+<p>Successfully purchased fries!</p>
+<p><b>Change:</b> $${change}</p>
+`;
+} else {
+let needed = 8 - money;
+
+OUTPUT.innerHTML += `
+<p>Insufficient funds.</p>
+<p>You need $${needed} more to buy the fries.</p>
+`;
+}
+}
 
 else {
 OUTPUT.innerHTML += `
